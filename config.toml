@@ -1,0 +1,15 @@
+baseURL = "https://blog.minoru.dev/"
+languageCode = "ja"
+title = "どらの引き出し"
+enableEmoji = true
+enableGitInfo = true
+hasCJKLanguage = true
+
+theme = "jeffprod"
+
+[permalinks]
+    post = "/:year/:filename"
+
+    [taxonomies]
+        tag = "tags"
+            archive = "archives"
