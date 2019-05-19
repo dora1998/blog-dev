@@ -43,9 +43,9 @@
                     {{ .Title }}
                     {{ end }}
                 </h1>
-                {{ if eq .Type "article" }}
-                {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
-                {{ else }}
+                {{ if eq .Type "post" }}
+                <p>{{ .Date.Format "January 2, 2006" }}</p>
+                {{ else if eq .Type "page" }}
                 <p>{{ .Site.Params.site_description }}</p>
                 {{ end }}
             </div>
