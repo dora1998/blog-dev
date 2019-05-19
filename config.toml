@@ -6,6 +6,8 @@ enableEmoji = true
 enableGitInfo = true
 hasCJKLanguage = true
 
+googleAnalytics = "UA-140449562-2"
+
 theme = "jeffprod"
 
 [permalinks]
