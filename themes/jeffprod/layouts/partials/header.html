@@ -42,6 +42,8 @@
                 </h1>
                 {{ if eq .Type "article" }}
                 {{ .Date.Format "January 2, 2006" }} &middot;&nbsp;{{ .ReadingTime }} min read
+                {{ else }}
+                <p>{{ .Site.Params.site_description }}</p>
                 {{ end }}
             </div>
         </div>

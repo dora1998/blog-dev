@@ -1,5 +1,6 @@
 baseURL = "https://blog.minoru.dev/"
 languageCode = "ja"
+DefaultContentLanguage = "jp"
 title = "どらの引き出し"
 enableEmoji = true
 enableGitInfo = true
@@ -13,3 +14,9 @@ theme = "jeffprod"
     [taxonomies]
         tag = "tags"
             archive = "archives"
+
+[params]
+    site_description = "一歩一歩、ゆっくりと。"
+    twitter_id = "_dorayaki_"
+    github_id = "dora1998"
+    website = "https://minoru.dev"
