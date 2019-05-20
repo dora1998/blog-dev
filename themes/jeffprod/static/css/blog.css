@@ -6,6 +6,16 @@ html,body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+    }
+.hero-body::before{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
     }
 .mysocial { color: hsl(0, 0%, 100%);}
 .mysocial:hover { color: hsl(0, 0%, 71%) }

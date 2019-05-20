@@ -44,23 +44,16 @@
 
     <!-- hero -->
     <section class="hero is-info is-medium">
-        <div class="hero-body" style="background-image: url({{ "img/bg-blog.jpg" | absURL }});">
+        <div class="hero-body"
+            style="background-image: url({{ if isset .Params "eyecatch" }}{{ .Params.eyecatch }}{{ else }}{{ "img/bg-blog.jpg" | absURL }}{{ end }});">
             <div class="container has-text-centered">
                 <br>
                 <h1 class="title is-size-1">
-                    {{ if eq .Type "tags" }}
-                    #{{ .Title }}
-                    {{ else if eq .Type "archives" }}
-                    Archive {{ .Title }}
-                    {{ else }}
-                    {{ .Title }}
-                    {{ end }}
+                    <a href="{{ .Site.BaseURL | absURL }}">
+                        {{ .Site.Title }}
+                    </a>
                 </h1>
-                {{ if eq .Type "post" }}
-                <p>{{ .Date.Format "January 2, 2006" }}</p>
-                {{ else if eq .Type "page" }}
                 <p>{{ .Site.Params.site_description }}</p>
-                {{ end }}
             </div>
         </div>
     </section>

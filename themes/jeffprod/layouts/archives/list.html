@@ -5,7 +5,9 @@
     <div class="column is-9">
         <div class="tile is-child box">
             <div class="content">
-{{ range $key, $value := .Site.Taxonomies.archives }}{{ if eq $key $archive }}{{ range $value.Pages }}
+                <h2>Archive {{ .Title }}</h2>
+                <hr>
+                {{ range $key, $value := .Site.Taxonomies.archives }}{{ if eq $key $archive }}{{ range $value.Pages }}
                 <article class="media">
                     <div class="media-content">
                         <div class="content">
@@ -19,7 +21,7 @@
                     </div>
                 </article>
                 <br>
-{{ end }}{{ end }}{{ end }}
+                {{ end }}{{ end }}{{ end }}
             </div>
         </div>
     </div>
