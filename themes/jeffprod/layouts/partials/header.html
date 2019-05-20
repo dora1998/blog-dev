@@ -4,8 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}</title>
+    <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
+    {{ if isset .Params "eyecatch" }}
+    <meta property="og:image" content="{{ path.Join .Permalink .Params.eyecatch }}" />
+    {{ end }}
+    <meta property="og:description"
+        content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+    <meta name="twitter:card" content="summary" />
+    {{ with .Site.Params.twitter_id }}
+    <meta name="twitter:site" content="@{{ . }}" />
+    {{ end }}
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
