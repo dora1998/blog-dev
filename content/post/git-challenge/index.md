@@ -4,7 +4,7 @@ date: 2019-05-20T03:50:00+09:00
 archives: "2019"
 tags: ["企業イベント", "mixi", "git"]
 author: Dora
-eyecatch: "./img-eyecatch.png"
+eyecatch: "img-eyecatch.png"
 ---
 
 5/19に行われた、株式会社ミクシィ主催の[「git challenge #11」](https://mixi-recruit.snar.jp/jobboard/detail.aspx?id=DxbrxvASR_c)に参加してきました！
