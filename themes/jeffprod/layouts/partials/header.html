@@ -13,7 +13,7 @@
     <meta property="og:title" content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
     {{ if isset .Params "eyecatch" }}
     <meta property="og:image:secure_url" content="{{ .Permalink }}{{ .Params.eyecatch }}" />
-    <meta property="twitter:image" content="{{ path.Join .Permalink .Params.eyecatch }}" />
+    <meta property="twitter:image" content="{{ .Permalink }}{{ .Params.eyecatch }}" />
     {{ end }}
     <meta property="og:description"
         content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
