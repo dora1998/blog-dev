@@ -12,7 +12,7 @@
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:title" content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
     {{ if isset .Params "eyecatch" }}
-    <meta property="og:image:secure_url" content="{{ path.Join .Permalink .Params.eyecatch }}" />
+    <meta property="og:image:secure_url" content="{{ .Permalink }}{{ .Params.eyecatch }}" />
     <meta property="twitter:image" content="{{ path.Join .Permalink .Params.eyecatch }}" />
     {{ end }}
     <meta property="og:description"
@@ -48,7 +48,7 @@
     <!-- hero -->
     <section class="hero is-info is-medium">
         <div class="hero-body"
-            style="background-image: url({{ if isset .Params "eyecatch" }}{{ .Params.eyecatch }}{{ else }}{{ "img/bg-blog.jpg" | absURL }}{{ end }});">
+            style="background-image: url({{ if isset .Params "eyecatch" }}./{{ .Params.eyecatch }}{{ else }}{{ "img/bg-blog.jpg" | absURL }}{{ end }});">
             <div class="container has-text-centered">
                 <br>
                 <h1 class="title is-size-3 is-size-1-desktop">
