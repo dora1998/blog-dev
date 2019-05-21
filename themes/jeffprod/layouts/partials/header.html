@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default "en" }}">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:title" content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}" />
     {{ if isset .Params "eyecatch" }}
-    <meta property="og:image" content="{{ path.Join .Permalink .Params.eyecatch }}" />
+    <meta property="og:image:secure_url" content="{{ path.Join .Permalink .Params.eyecatch }}" />
+    <meta property="twitter:image" content="{{ path.Join .Permalink .Params.eyecatch }}" />
     {{ end }}
     <meta property="og:description"
         content="{{ if .IsPage }}{{ .Summary }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
