@@ -1,7 +1,6 @@
 ---
 title: 'Wantedlyのサマーインターンに行ってきた'
 date: 2019-08-17T10:50:07+09:00
-draft: true
 archives: '2019'
 tags: ['インターン', 'Wantedly', 'React']
 author: Dora
