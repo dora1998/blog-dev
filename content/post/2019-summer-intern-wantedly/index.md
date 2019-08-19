@@ -5,6 +5,7 @@ draft: true
 archives: '2019'
 tags: ['インターン', 'Wantedly', 'React']
 author: Dora
+eyecatch: 'img-eyecatch.jpeg'
 ---
 
 こんにちは、どら([@d0ra1998](https://twitter.com/d0ra1998/))です。
