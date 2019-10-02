@@ -5,7 +5,6 @@ archives: '2019'
 tags: ['インターン', 'Abema', 'React', 'CyberAgent']
 author: Dora
 eyecatch: 'img-eyecatch.png'
-draft: true
 ---
 
 10 月になりましたが、京都は 30℃ 超えで溶けそうです。どら([@d0ra1998](https://twitter.com/d0ra1998/))です。
