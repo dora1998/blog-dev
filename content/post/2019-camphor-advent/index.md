@@ -69,7 +69,7 @@ draft: True
 
 [Google Apps Script における Gmail の読み出し件数の制限とその対処法](https://tonari-it.com/gas-gmail-search-limit/)
 
-## 番外編：映画館のチケット
+## 映画館のチケットも登録してみる
 
 筆者がよく行く MOVIX 京都の映画チケットについても、同様にメールからの自動登録を行ってみました。カレンダーには以下のような感じで登録されます。
 
@@ -85,5 +85,9 @@ draft: True
 ## まとめ
 
 GAS を使うと、Gmail と Google カレンダーとの連携が簡単にとることができました。皆さんもぜひ自分にとって頻度の高かったり、重要だったりする予定の自動登録に挑戦してみてくださいね。
+
+書き終わってから気づいたのですが、2016 年の本アドベントカレンダーでほぼ似たテーマの記事があって驚きました。
+
+[GAS で DMM 英会話の予約メールから自動的にカレンダーに登録 | shotarok&#39;s Tech Blog](http://blog.shotarok.com/post/2016-12-09-auto_creation_of_eikaiwa_events/)
 
 明日の CAMPHOR- Advent Calendar の担当は、[tomokortn](https://note.mu/tomokortn)さんです。
