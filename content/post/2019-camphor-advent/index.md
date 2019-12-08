@@ -4,6 +4,7 @@ date: 2019-12-11T00:00:00+09:00
 archives: '2019'
 tags: ['Google Apps Script', 'Gmail', 'Google Calendar', 'JavaScript']
 author: Dora
+eyecatch: 'eyecatch.png'
 ---
 
 この記事は [CAMPHOR- Advent Calendar 2019](https://advent.camph.net/) 11 日目の記事です．
@@ -32,7 +33,7 @@ author: Dora
 
 ## 実装の流れ
 
-主なプログラムの流れとしては下のような感じです。今回は、メールもカレンダーも Google アカウントを使用するので、Google Apps Script(GAS)で書いていきます。
+主なプログラムの流れとしては下のような感じです。今回は、メールもカレンダーも Google アカウントを使用するので、Google Apps Script (GAS)で書いていきます。
 
 1. 前回の定期実行後に届いた該当メールを Gmail から取得
 1. メッセージ内容をよしなにパース
@@ -44,7 +45,7 @@ author: Dora
 
 スマート EX から届くメールの原文と、そこから取り出したい情報を考えるとこんな感じになります。
 
-![スマートEXから届くメール](smartex-parse.png)
+{{< img-with-link alt="スマートEXから届くメール" src="smartex-parse.png" >}}
 
 これをいい感じに正規表現に落とし込みます。パターン自体が複数行となるように作成してもいいのですが、テスター等でチェックしづらいので 1 行で作成しています。
 
@@ -54,7 +55,7 @@ author: Dora
 
 これはパターンにマッチするかを[テスター](https://regex101.com/)でチェックしたところ。大丈夫そうです。
 
-![正規表現をテストしたところ](regex-tester.png)
+{{< img-with-link alt="正規表現をテストしたところ" src="regex-tester.png" full-width="true" >}}
 
 ## 完成したプログラム
 
@@ -70,7 +71,8 @@ author: Dora
 
 ## 映画館のチケットも登録してみる
 
-筆者がよく行く MOVIX 京都の映画チケットについても、同様にメールからの自動登録を行ってみました。カレンダーには以下のような感じで登録されます。
+筆者がよく行く MOVIX 京都の映画チケットについても、同様にメールからの自動登録を行ってみました。  
+カレンダーには以下のような感じで登録されます。
 
 ![映画チケットの予定を自動登録した例](calendar-movix.png)
 
