@@ -53,3 +53,7 @@ body {
   margin: 0 auto;
   display: block;
 }
+.content img.full-width {
+  width: 100%;
+  max-width: 100%;
+}
