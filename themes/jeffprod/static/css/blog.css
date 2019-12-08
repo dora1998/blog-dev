@@ -39,3 +39,12 @@ html,body {
 .iframely-embed {
     margin-bottom: 8px;
 }
+
+.content {
+  line-height: 2;
+}
+.content img {
+  max-width: 500px;
+  margin: 0 auto;
+  display: block;
+}
