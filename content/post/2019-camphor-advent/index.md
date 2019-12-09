@@ -1,6 +1,6 @@
 ---
 title: 'Gmail に届いた新幹線や映画の予定を自動登録するようにした話'
-date: 2019-12-11T00:00:00+09:00
+date: 2019-12-13T00:00:00+09:00
 archives: '2019'
 tags: ['Google Apps Script', 'Gmail', 'Google Calendar', 'JavaScript']
 author: Dora
