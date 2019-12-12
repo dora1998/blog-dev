@@ -91,4 +91,4 @@ GAS を使うと、Gmail と Google カレンダーとの連携が簡単にと�
 
 [GAS で DMM 英会話の予約メールから自動的にカレンダーに登録 | shotarok&#39;s Tech Blog](http://blog.shotarok.com/post/2016-12-09-auto_creation_of_eikaiwa_events/)
 
-明日の CAMPHOR- Advent Calendar の担当は、[tomokortn](https://note.mu/tomokortn)さんです。
+明日の CAMPHOR- Advent Calendar の担当は、[satomi](https://note.mu/___msato)さんです。
