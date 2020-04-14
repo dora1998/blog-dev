@@ -22,3 +22,6 @@ theme = "jeffprod"
     twitter_id = "_dorayaki_"
     github_id = "dora1998"
     website = "https://minoru.dev"
+
+[markup.goldmark.renderer]
+unsafe= true
