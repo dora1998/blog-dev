@@ -1,9 +1,10 @@
 ---
-title: 'pixivの選考インターンに行ってきました'
+title: "pixivの選考インターンに行ってきました"
 date: 2020-03-23T14:00:00+09:00
-archives: '2020'
-tags: ['インターン', 'pixiv', 'Vue.js']
+archives: "2020"
+tags: ["インターン", "pixiv", "Vue.js"]
 author: Dora
+eyecatch: "page_compare.png"
 ---
 
 底冷えしていた京都も、徐々に暖かい日が増えてきました。どら([@d0ra1998](https://twitter.com/d0ra1998/))です。
