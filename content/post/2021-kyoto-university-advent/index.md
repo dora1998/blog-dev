@@ -30,7 +30,7 @@ $ git push lab main
 
 ```
 $ git clone --bare . /Volumes/dora-lab/home/dora/graduation_thesis.git
-$ git remote lab /Volumes/dora-lab/home/dora/graduation_thesis.git
+$ git remote add lab /Volumes/dora-lab/home/dora/graduation_thesis.git
 ```
 
 研究室によってはクラウドストレージの利用などが厳しいところもあると思うので、GitHub が使いづらい場合などにもこの手法は役に立つのではないかと思います。
