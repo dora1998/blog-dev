@@ -4,6 +4,7 @@ date: 2021-12-24T00:00:00+09:00
 archives: "2021"
 tags: ["Fastly", "microCMS", "GitHub Actions", "Webhook"]
 author: Dora
+eyecatch: "ogp.png"
 ---
 
 この記事は [microCMS Advent Calendar 2021](https://qiita.com/advent-calendar/2021/microcms) 24 日目の記事です。
