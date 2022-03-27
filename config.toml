@@ -8,7 +8,7 @@ hasCJKLanguage = true
 
 googleAnalytics = "UA-140449562-2"
 
-theme = "jeffprod"
+theme = "PaperMod"
 
 [permalinks]
     post = "/:year/:filename"
@@ -19,7 +19,7 @@ theme = "jeffprod"
 
 [params]
     site_description = "一歩一歩、ゆっくりと。"
-    twitter_id = "_dorayaki_"
+    twitter_id = "d0ra1998"
     github_id = "dora1998"
     website = "https://minoru.dev"
 
