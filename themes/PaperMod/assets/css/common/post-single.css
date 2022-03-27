@@ -89,7 +89,8 @@
 .post-content ol,
 .post-content p,
 .post-content figure,
-.post-content ul {
+.post-content ul,
+.post-content .iframely-embed {
     margin-bottom: var(--content-gap);
 }
 
@@ -154,7 +155,7 @@
 }
 
 .post-content .highlight:not(table) {
-    margin: 10px auto;
+    margin: var(--content-gap) auto;
     background: var(--hljs-bg) !important;
     border-radius: var(--radius);
 }
@@ -195,7 +196,6 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
     border-radius: 2px;

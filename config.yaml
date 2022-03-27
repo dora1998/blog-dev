@@ -1,0 +1,36 @@
+baseURL: 'https://blog.minoru.dev/'
+languageCode: ja
+DefaultContentLanguage: jp
+title: どらの引き出し
+enableEmoji: true
+enableGitInfo: true
+hasCJKLanguage: true
+googleAnalytics: UA-140449562-2
+theme: PaperMod
+
+permalinks:
+  post: '/:year/:filename'
+
+taxonomies:
+  tag: tags
+  archive: archives
+
+params:
+  site_description: 一歩一歩、ゆっくりと。
+  ShowToc: true
+  ShowShareButtons: true
+
+  homeInfoParams:
+    Title: Hi there 👋
+    Content: '一歩一歩、ゆっくりと。'
+
+  socialIcons:
+    - name: twitter
+      url: 'https://twitter.com/d0ra1998'
+    - name: github
+      url: 'https://github.com/dora1998'
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
