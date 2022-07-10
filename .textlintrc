@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "no-todo": true,
+    "no-nfd": true,
+    "footnote-order": true,
+    "preset-ja-technical-writing": {
+      "no-exclamation-question-mark": false
+    }
+  },
+  "filters": {
+    "comments": true
+  }
+}
