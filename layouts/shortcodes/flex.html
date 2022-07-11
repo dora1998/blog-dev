@@ -1,0 +1,11 @@
+<div
+  class="flex"
+  style="
+    {{- with .Get "vertical" }} flex-direction: row; {{ end -}}
+    {{- with .Get "justify" }} justify-content: {{ . }}; {{ end -}}
+    {{- with .Get "align" }} align-items: {{ . }}; {{ end -}}
+    {{- with .Get "gap" }} gap: {{ . }}; {{ end -}}
+  "
+>
+{{ .Inner | markdownify }}
+</div>
