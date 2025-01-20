@@ -86,11 +86,11 @@
     50%/1px 1px repeat-x;
 }
 
-.post-content dl,
-.post-content ol,
+.post-content > dl,
+.post-content > ol,
+.post-content > ul,
 .post-content p,
 .post-content figure,
-.post-content ul,
 .post-content .iframely-embed,
 .post-content .cp_embed_wrapper {
   margin-bottom: var(--content-gap);
