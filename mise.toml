@@ -1,0 +1,10 @@
+[tools]
+node = "24.12.0"
+pnpm = "10.26.2"
+
+[tasks.new]
+description = "Hugoで新しい記事を作成する"
+usage = '''
+arg "<slug>" default="todo"
+'''
+run = "hugo new --kind bundle post/$(date +\"%Y%m%d\")-${usage_slug}/index.md"
